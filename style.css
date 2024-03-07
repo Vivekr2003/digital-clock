@@ -1,0 +1,81 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #f8f8f9;
+}
+
+.clock{
+    width: 520px;
+    height: 500px;
+    padding: 40px;
+    background-color: #343435;
+    box-shadow: 10px 10px 50px #333131;
+    border-radius: 8px;
+    color: rgb(0, 8, 255);
+}
+
+.clock .display{
+    padding: 40px 10px 10px;
+    border-radius: 6px;
+    height: 200px;
+    background-color: #cfcbcb;
+    box-shadow: 10px 10px 50px #5f5d5d;
+    border-radius: 8px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    
+}
+
+.clock .display .weekdays{
+    font-size: 18px;
+    font-weight: 650;
+    width: 100%;
+    position: absolute;
+    top: 10px;
+    left: 0;
+    margin-top: 18px;
+    text-align: center;
+    font-family: 'Text Me One', sans-serif;
+}
+
+.weekdays span{
+    padding: 0 10px;
+    opacity: 0.2;
+}
+
+.weekdays span.active{
+    opacity: 1;
+}
+
+.display .timeDisplay{
+    display: flex;
+    justify-content: center;
+}
+
+.timeDisplay .time{
+    font-size: 80px;
+    display: flex;
+    justify-content: center;
+    letter-spacing: 3px;
+    margin-top: 32px;
+    margin-left: 10px;
+    font-family: 'Digital-7 Mono', sans-serif;
+}
+
+.timeDisplay .format{
+    font-size: 25px;
+    margin-top: 80px;
+    margin-left: 10px;
+    font-family: 'Text Me One', sans-serif;
+}
+
